@@ -1,0 +1,109 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\hp\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\hp\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 1.8.0_191)
+[debug]       Load.loadUnit: plugins took 226.9513ms
+[debug]       Load.loadUnit: defsScala took 0.7554ms
+[debug] [Loading] Scanning directory C:\Users\hp\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\hp\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 49.1502 ms
+[debug]           Load.resolveProject(global-plugins) took 98.2448ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\hp\.sbt\1.0\plugins, plugins: List(<none>))) took 210.4995ms
+[debug] [Loading] Done in C:\Users\hp\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 291.8642ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.3465ms
+[debug]     Load.loadUnit(file:/C:/Users/hp/.sbt/1.0/plugins/, ...) took 532.8874ms
+[debug]   Load.apply: load took 1159.3726ms
+[debug]   Load.apply: resolveProjects took 22.114ms
+[debug]   Load.apply: finalTransforms took 175.0582ms
+[debug]   Load.apply: config.delegates took 15.0375ms
+[debug]   Load.apply: Def.make(settings)... took 3111.5984ms
+[debug]   Load.apply: structureIndex took 329.9043ms
+[debug]   Load.apply: mkStreams took 2.9101ms
+[info] loading global plugins from C:\Users\hp\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 17213.338ms
+[debug]           Load.loadUnit: plugins took 49.943ms
+[debug]           Load.loadUnit: defsScala took 0.0061ms
+[debug] [Loading] Scanning directory C:\Users\hp\Desktop\ESGI-Cours\Spark\Projets\semestres\project
+[debug]             Load.loadUnit: mkEval took 15.4266ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\hp\Desktop\ESGI-Cours\Spark\Projets\semestres\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 6.4954 ms
+[info] loading settings for project semestres-build from idea.sbt ...
+[debug]               Load.resolveProject(semestres-build) took 14.4824ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id semestres-build, base: C:\Users\hp\Desktop\ESGI-Cours\Spark\Projets\semestres\project, plugins: List(<none>))) took 21.8775ms
+[debug] [Loading] Done in C:\Users\hp\Desktop\ESGI-Cours\Spark\Projets\semestres\project, returning: (semestres-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 8100.9742ms
+[debug]           Load.loadUnit: cleanEvalClasses took 26.4494ms
+[debug]         Load.loadUnit(file:/C:/Users/hp/Desktop/ESGI-Cours/Spark/Projets/semestres/project/, ...) took 8179.4722ms
+[debug]       Load.apply: load took 8181.7362ms
+[debug]       Load.apply: resolveProjects took 0.1616ms
+[debug]       Load.apply: finalTransforms took 29.1665ms
+[debug]       Load.apply: config.delegates took 0.6305ms
+[debug]       Load.apply: Def.make(settings)... took 175.2829ms
+[debug]       Load.apply: structureIndex took 104.7014ms
+[debug]       Load.apply: mkStreams took 0.0025ms
+[info] loading project definition from C:\Users\hp\Desktop\ESGI-Cours\Spark\Projets\semestres\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 17282.5963ms
+[debug]     Load.loadUnit: defsScala took 0.0065ms
+[debug] [Loading] Scanning directory C:\Users\hp\Desktop\ESGI-Cours\Spark\Projets\semestres
+[debug]       Load.loadUnit: mkEval took 0.4513ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\hp\Desktop\ESGI-Cours\Spark\Projets\semestres, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 5.4671 ms
+[info] loading settings for project semestres from build.sbt ...
+[debug]         Load.resolveProject(semestres) took 81.6411ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id semestres, base: C:\Users\hp\Desktop\ESGI-Cours\Spark\Projets\semestres, plugins: List(<none>))) took 90.4844ms
+[debug] [Loading] Done in C:\Users\hp\Desktop\ESGI-Cours\Spark\Projets\semestres, returning: (semestres)
+[debug]     Load.loadUnit: loadedProjectsRaw took 5661.0074ms
+[debug]     Load.loadUnit: cleanEvalClasses took 102.9836ms
+[debug]   Load.loadUnit(file:/C:/Users/hp/Desktop/ESGI-Cours/Spark/Projets/semestres/, ...) took 23047.6975ms
+[debug] Load.apply: load took 23056.3465ms
+[debug] Load.apply: resolveProjects took 0.2589ms
+[debug] Load.apply: finalTransforms took 50.6267ms
+[debug] Load.apply: config.delegates took 0.4699ms
+[debug] Load.apply: Def.make(settings)... took 168.7881ms
+[debug] Load.apply: structureIndex took 44.0226ms
+[debug] Load.apply: mkStreams took 0.0037ms
+[info] set current project to semestres (in build file:/C:/Users/hp/Desktop/ESGI-Cours/Spark/Projets/semestres/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 54164 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 54164, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to semestres (in build file:/C:/Users/hp/Desktop/ESGI-Cours/Spark/Projets/semestres/)
+[debug] > Exec(idea-shell, None, None)
+[warn] In the last 2807 seconds, 18.971 (0,7%) were spent in GC. [Heap: 0,30GB free of 0,39GB, max 1,33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 15847 seconds, 8.281 (0,1%) were spent in GC. [Heap: 0,35GB free of 0,45GB, max 1,33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 18940 seconds, 5.896 (0,0%) were spent in GC. [Heap: 0,32GB free of 0,41GB, max 1,33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 42771 seconds, 11.713 (0,0%) were spent in GC. [Heap: 0,31GB free of 0,41GB, max 1,33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 17358 seconds, 10.137 (0,1%) were spent in GC. [Heap: 0,30GB free of 0,39GB, max 1,33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
+[warn] In the last 16968 seconds, 8.743 (0,1%) were spent in GC. [Heap: 0,29GB free of 0,39GB, max 1,33GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.
