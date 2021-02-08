@@ -1,6 +1,4 @@
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.DataFrame
-import org.apache._
 
 
 
@@ -19,6 +17,14 @@ object ParadiseEntity extends App{
   entity.show(10)
   entity.printSchema()
 
+  //On va modifier le nom des colonnes commençant par "n."
+"""
+  for (x <- entity.columns) {
+    if (x.startsWith("n.")) {
+      entity = entity.withColumnRenamed(x, x.drop(2))
+    }
+  }
+  entity.columns"""
   //val filterData = entity.select("*").where("n.country_codes=CYM")
   //filterData.show(10)
 

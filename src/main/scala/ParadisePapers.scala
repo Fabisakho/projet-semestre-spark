@@ -16,24 +16,34 @@ object ParadisePapers extends App{
   /**
    *
     */
-  val paradisf = spark.read.option("inferSchema", "true").option("header", "true").csv(path= "data/paradise_papers.nodes.address.csv")
+  var paradisf = spark.read.option("inferSchema", "true").option("header", "true").csv(path= "data/paradise_papers.nodes.address.csv")
   paradisf.show(20)
 
-  //val sqlCsv = spark.sql("SELECT * FROM paradise_papers.nodes.address.csv")
-  //paradisf.count()
-  //paradisf.select("n.countries").show(10)
-//paradisf.select("n.countries STRING").show(10)
-  //val aff =  spark.sql("SELECT * from "data/paradise_papers.nodes.address.csv" ")
+  for (x <- paradisf.columns) {
+    if (x.startsWith("n.")) {
+      paradisf = paradisf.withColumnRenamed(x, x.drop(2))
+    }
+  }
+  paradisf.columns
+
+  val sqlCsv = spark.sql("SELECT * FROM paradise_papers.nodes.address.csv")
+  paradisf.count()
+  paradisf.select("n.countries").show(10)
+  paradisf.select("n.countries STRING").show(10)
+
+  //val aff =  spark.sql("SELECT * from data/paradise_papers.nodes.address.csv" )
 /*
 * Afficher le contenue du csv
  */
- // val dfReader= spark.read
- // val dfcsv= dfReader.csv("data/paradise_papers.nodes.address.csv")
-  //dfcsv.show(5)
+  val dfReader= spark.read
+  val dfcsv= dfReader.csv("data/paradise_papers.nodes.address.csv")
+  dfcsv.show(5)
 /**
 * Creer une vue temporaire
  */
-  //val sqlDfCsv: Unit = dfcsv.createOrReplaceTempView("paradise_papers.nodes.address")
- // val sqlDf = spark.sql("SELECT * FROM paradise_papers.nodes.address where n.countries = Mauritius")
- // sqlDf.show(5)
+  val sqlDfCsv: Unit = dfcsv.createOrReplaceTempView("paradise_papers.nodes.address")
+  val sqlDf = spark.sql("SELECT * FROM paradise_papers.nodes.address where n.countries = Mauritius")
+  sqlDf.show(5)
+
+
 }
