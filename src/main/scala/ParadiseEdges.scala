@@ -71,4 +71,23 @@ object ParadiseEdges extends App{
 
   """
 
+  //val sq = users.select("node_2").distinct
+  //sq.show()
+
+/*oval  test = users.select("rel_type").distinct()
+//test.show(5)
+
+//val  tes = users.select("r.sourceID" ).distinct()
+//tes.show(5)
+
+
+ val selecti = users.select("rel_type").where("rel_type!= 'registered_address'")
+    selecti.show()
+
+// selecti.count()
+val usersFiltered = users.select("node_1", "node_2", "rel_type").where("rel_type!= 'registered_address'")
+usersFiltered.show(10)
+
+//val te = usersFiltered.count()
+
 }
